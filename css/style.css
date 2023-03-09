@@ -1,0 +1,588 @@
+/* import poppins font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box;
+    transition: .2s linear;
+}
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px  */
+    scroll-behavior: smooth;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
+}
+:root{
+    --purple_color : rgb(183,92,255);
+    --half_white : rgba(255, 255, 255, 0.5);
+    --white_10 : rgba(255, 255, 255, 0.1);
+    --white : #ffffff;
+}
+
+/* *********** ----------
+ reuseable able css start from here  
+ --------- ************* */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.center_allside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section_header h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.section_header p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+h2,h2,h4{
+    font-weight: 700;
+    font-family: 'poppins';
+    color: var(--white);
+}
+
+a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    color: var(--white);
+}
+p{
+    font-weight: 500;
+    color: var(--half_white);
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 36px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.btn {
+    border-radius: 1rem;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    padding: 1rem 2rem;
+}
+.bg_white_btn{
+    padding: 1rem 2rem;
+    background: var(--white_10);
+    color: var(--white);
+    border-radius: 1rem;
+}
+.bg_white_btn:hover{
+    background: #AD9B9E;
+}
+.jc-between{
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+
+
+.row{
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+.col-1{
+    width: 8.33333%;
+}
+.col-2{
+    width: 16.66666666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33333333%;
+}
+.col-5{
+    width: 41.666666666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.333333333%;
+}
+.col-8{
+    width: 66.6666666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.333333333%;
+}
+.col-11{
+    width: 91.6666666666666%;
+}
+.col-12{
+    width: 100%;
+}
+.section {
+    padding-top: 15rem;
+}
+/* *********** ----------
+ reuseable able css end here  
+ --------- ************* */
+
+@keyframes upDown {
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+}
+/* *********** ----------
+ header  css start here  
+ --------- ************* */
+
+header{ 
+    background: var(--white_10);
+    padding: 1rem 0;
+}
+.logo h1 {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--white);
+}
+.logo h1 span{
+    color : rgb(183,92,255);
+}
+.search-box-area {
+    background : rgba(255, 255, 255, 0.1);
+    padding : 0rem 2rem;
+    display: flex;
+    align-items: center;
+    width: 385px;
+    height: 4.5rem;
+    border-radius: 10px;
+}
+.search-box-area label{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+#search_box{
+    margin-left: 1rem;
+    background: transparent;
+    width: 100%;
+    border: none;
+    line-height: 3rem;
+}
+#search_box::placeholder{
+    color: var(--half_white);
+    font-weight: 500;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+nav {
+    align-items: center;
+    display: flex;
+}
+nav li{
+    padding-left: 4rem;
+}
+nav li a{
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+nav li a:hover{
+    color: var(--white_10);
+}
+.btn-fill-hover:hover{
+    background: #AEA2A8;
+    color: var(--white);
+}
+
+/* hero css start  */
+
+.hero_img{
+    width: 100%;
+    text-align: center;
+    animation: upDown 2.5s linear infinite;
+}
+.hero_section {
+    padding-top: 10rem;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_content h2{
+    font-size: 50px;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+#hero_two_btn{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#hero_two_btn a{
+    margin-right: 3rem;
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.hero_bottom_no h2{
+    font-size: 3rem;
+}
+/* *********** ----------
+ header css end here  
+ --------- ************* */
+
+
+
+/* *********** ----------
+ payment method section  css start from here  
+ --------- ************* */
+.payment_method{
+    flex-direction: row;
+}
+
+
+/* *********** ----------
+ payment method image showing section  css end here  
+ --------- ************* */
+
+
+ /* *********** ----------
+ about us section  css start from here  
+ --------- ************* */
+.aboutUs_leftImg img{
+    width: 100%;
+}
+.aboutUs_rightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutUs_rightContent h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.aboutUs_rightContent p{
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.aboutUs_rightContent a{
+    width: 15.5rem;
+}
+
+/* *********** ----------
+ about us section css end here  
+ --------- ************* */
+
+
+ /* *********** ----------
+ collection section  css start from here  
+ --------- ************* */
+
+ .collection_nav {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+ }
+.collection_nav li a{
+    padding: 0.5rem 10.7rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+.collection_nav li a:hover{
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.collection_nav li{
+    margin-right: 1.5rem;
+}
+.collection_nav li:last-child{
+    margin-right: 0rem;
+}
+
+.collection_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 3rem;
+}
+.single_card {
+    padding: 2.6rem;
+    background: var(--white_10);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.single_card:last-child{
+    margin-right: 0px;
+}
+.single_card img{
+    width: 100%;
+}
+.collection_card_details,.artWorks_card_details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.single_card a{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 2.5rem;
+}
+.single_card a:hover,.topCreator_card a:hover{
+    color: var(--purple_color);
+    background: transparent;
+    border: 1px solid var(--purple_color);
+}
+.collection_card_details h3,.artWorks_card_details h3{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--white);
+}
+.current_bid_h3{
+    text-align: end;
+}
+.collection_card_details h3 span,.artWorks_card_details h3 span{
+    color: var(--half_white);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.single_card:hover{
+    transform: scale(1.08);
+    background: var(--half_white);
+}
+/* *********** ----------
+ collection section css end here  
+ --------- ************* */
+
+
+ /* *********** ----------
+ Featured Artworks section  css start from here  
+ --------- ************* */
+.swiper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.swiper-slide{
+    width: 30%;
+}
+.artWorks_cards{
+    padding: 30px 0px;
+}
+.single_card img{
+    width: 100%;
+}
+/* *********** ----------
+ Featured Artworks section css end here  
+ --------- ************* */
+
+
+/* *********** ----------
+ Top creator section css start here  
+ --------- ************* */
+#topCreator_cards{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 4.2rem;
+    border-radius: 1rem;
+    background : var(--white_10);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+#topCreator_cards:hover{
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+    background: var(--half_white);
+}
+.topCreator_card img{
+    width: 100%;
+}
+.creator_photo{
+    width: 99px !important;
+    margin-top: -4.5rem;
+}
+.topCreator_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topCreator_card h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.topCreator_card p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 1rem 0rem 2.2rem 0rem;
+    line-height: 22px;
+}
+.topCreator_card a{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 11rem;
+}
+/* *********** ----------
+ Top creator section css end here  
+ --------- ************* */
+
+
+/* *********** ----------
+ faq section css start from here  
+ --------- ************* */
+#left_faq{
+    margin-right: 3rem;
+}
+.faq_boxs{
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+.answer{
+    margin-top: 1rem;
+    display: none;
+}
+.active_faw_answer > .answer {
+    display: block;
+}
+.faq_header h2{
+    text-align: center;
+}
+.faq_title{
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 2rem;
+}
+.faq_title h3{
+    font-size: 2rem;
+    color: var(--half_white);
+}
+.faq_title i{
+    font-size: 2rem;
+    color: var(--half_white);   
+}
+/* *********** ----------
+ faq section css end here  
+ --------- ************* */
+
+/* *********** ----------
+ Get Ready css start from here  
+ --------- ************* */
+.getReady_content{
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+.getReady_content h3{
+    font-size: 5rem;
+    text-align: center;
+    line-height: 7rem;
+    margin-bottom: 2rem;
+}
+.getReady_content a{
+    color: var(--white);
+    background: var(--half_white);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.getReady_content a:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+}
+/* *********** ----------
+ Get Ready css end here  
+ --------- ************* */
+
+
+
+/* *********** ----------
+ footer section css start from here  
+ --------- ************* */
+
+.footer{
+    padding-bottom: 10rem;
+}
+.footer_about h3,.footer_company h3,.footer_contact h3{
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.footer_about li,.footer_company li,.footer_contact li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.footer_about li a,.footer_company li a,.footer_contact li a{
+    color: var(--half_white);
+    font-size: 1.5rem;
+}
+.footer_contact_icons{
+    display: flex;
+}
+.footer_contact_icons i{
+    color: var(--half_white);
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+/* *********** ----------
+ footer section css end here  
+--------- ************* */
+
+
+/* *********** ----------
+ media query css start from here  
+--------- ************* */
+
+@media (max-width : 1024px) {
+    
+}
+@media (max-width : 768px) {
+    
+}
+@media (max-width : 414px) {
+    
+}
+
+/* *********** ----------
+ media query css end here  
+--------- ************* */
+
+
+

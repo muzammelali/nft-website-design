@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A mordern nft website</title>
+
+    <!-- swiper js  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link font awesome cnd  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header area start from here  -->
+    <header>
+      <div class="row container jc-between">
+        <div class="logo">
+          <h1>Psycho<span>Art</span></h1>
+        </div>
+        <div class="row">
+          <form class="search-box-area">
+            <label for="search_box" class="fas fa-search"></label>
+            <input
+              type="search"
+              placeholder="Search items and collections"
+              id="search_box"
+            />
+          </form>
+          <nav>
+            <li><a href="#">collections</a></li>
+            <li><a href="#">feature</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a class="btn btn-fill-hover" href="#">sellect wallet</a></li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header area end  -->
+
+    <!-- hero section start form here  -->
+    <div class="hero_section section container">
+      <div class="row jc-between">
+        <div class="col-5 hero_content">
+          <h2>Create, Sell & Collect Your Own Creative NFT</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit.
+          </p>
+          <div class="row" id="hero_two_btn">
+            <a href="#" class="btn btn-fill-hover">Explore Now</a>
+            <a href="#" class="bg_white_btn">Sell NFT</a>
+          </div>
+          <div class="row jc-between">
+            <div class="hero_bottom_no">
+              <h2>37k+</h2>
+              <p>Artworks</p>
+            </div>
+            <div class="hero_bottom_no">
+              <h2>20k+</h2>
+              <p>Artist</p>
+            </div>
+            <div class="hero_bottom_no">
+              <h2>99k+</h2>
+              <p>Aucations</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 center_allside">
+          <img src="img/heroimage.png" alt="" class="hero_img" />
+        </div>
+      </div>
+    </div>
+    <!-- hero section end here -->
+
+    <!-- payment method showing section start from here  -->
+
+    <div class="section payment_method container center_allside jc-between">
+      <img src="img/binance.svg" alt="binance" />
+      <img src="img/ethereum.svg" alt="ethereum" />
+      <img src="img/blockchain.svg" alt="blockchain" />
+    </div>
+    <!-- payment method showing section end here  -->
+
+    <!-- about us section start from here  -->
+
+    <div class="section container aboutUs_section">
+      <div class="aboutUs_header section_header">
+        <h2>About us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit.
+        </p>
+      </div>
+      <div class="aboutUs_content row jc-between">
+        <div class="col-5 aboutUs_leftImg">
+          <img src="img/about.png" alt="" />
+        </div>
+        <div class="col-6 aboutUs_rightContent">
+          <h2>Get Popular NFT</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
+            enim egestas, ac scelerisque ante pulvinar.
+          </p>
+          <a href="#" class="btn btn-fill-hover">Show more</a>
+        </div>
+      </div>
+    </div>
+    <!-- about us section end here  -->
+
+    <!-- collection section start from here  -->
+
+    <div class="section container collection_section">
+      <div class="collection_header section_header">
+        <h2>Collection</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit.
+        </p>
+      </div>
+      <div class="collection_content">
+        <div class="collection_nav">
+          <li><a href="#" class="btn">all</a></li>
+          <li><a href="#" class="btn">art</a></li>
+          <li><a href="#" class="btn">Photograpy</a></li>
+          <li><a href="#" class="btn">Pattern</a></li>
+        </div>
+        <div class="collection_cards">
+          <div class="single_card" data-item="art">
+            <img src="img/collection1.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Photograpy">
+            <img src="img/collection2.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="art">
+            <img src="img/collection3.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Photograpy">
+            <img src="img/collection4.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Pattern">
+            <img src="img/collection5.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Photograpy">
+            <img src="img/collection6.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Pattern">
+            <img src="img/collection7.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="art">
+            <img src="img/collection8.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+          <div class="single_card" data-item="Pattern">
+            <img src="img/collection9.png" alt="collection" />
+            <div class="collection_card_details">
+              <h3><span>@johny</span><br />Yellow painting</h3>
+              <h3 class="current_bid_h3">
+                <span>Current bid</span><br />0.005ETH
+              </h3>
+            </div>
+            <a href="#" class="btn">Place a bid</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- collection section end here  -->
+
+    <!-- featured artwork section start from here  -->
+
+    <div class="section container artWorks_section">
+      <div class="artWorks_header section_header">
+        <h2>Featured Artworks</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit.
+        </p>
+      </div>
+      <div class="artWorks_content swiper mySwiper">
+        <div class="artWorks_cards swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection1.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection2.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection3.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection4.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection5.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection6.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection7.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="single_card">
+              <img src="img/collection8.png" alt="collection" />
+              <div class="artWorks_card_details">
+                <h3><span>@johny</span><br />Yellow painting</h3>
+                <h3 class="current_bid_h3">
+                  <span>Current bid</span><br />0.005ETH
+                </h3>
+              </div>
+              <a href="#" class="btn">Place a bid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- featured artwork section end here  -->
+
+    <!-- top creator section start from here  -->
+    <div class="section top_creator container">
+      <div class="topCreator_header section_header">
+        <h2>Top Creator</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit.
+        </p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="topCreator_cards">
+            <div class="topCreator_card">
+              <img src="img/creator1.png" alt="creator" />
+              <img src="img/photo2.png" alt="" class="creator_photo" />
+              <h3>John wick</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">+ Follow</a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="topCreator_cards">
+            <div class="topCreator_card">
+              <img src="img/creator2.png" alt="creator" />
+              <img src="img/photo2.png" alt="" class="creator_photo" />
+              <h3>John wick</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">+ Follow</a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="topCreator_cards">
+            <div class="topCreator_card">
+              <img src="img/creator3.png" alt="creator" />
+              <img src="img/photo2.png" alt="" class="creator_photo" />
+              <h3>John wick</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">+ Follow</a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="topCreator_cards">
+            <div class="topCreator_card">
+              <img src="img/creator1.png" alt="creator" />
+              <img src="img/photo2.png" alt="" class="creator_photo" />
+              <h3>John wick</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">+ Follow</a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="topCreator_cards">
+            <div class="topCreator_card">
+              <img src="img/creator2.png" alt="creator" />
+              <img src="img/photo2.png" alt="" class="creator_photo" />
+              <h3>John wick</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">+ Follow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- top creator section end here  -->
+
+    <!-- faq section start from here  -->
+    <div class="section faq_section container">
+      <div class="section_header faq_header">
+        <h2>
+          Freaquently Asked <br />
+          Question
+        </h2>
+        <p>Wanna Ask Something?</p>
+      </div>
+
+      <div class="row jc-between">
+        <div class="col-6" id="left_faq">
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+          <div class="faq_boxs">
+            <div class="faq_title row jc-between">
+              <h3>lorem ipsam dollar?</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              laudantium corporis, aut saepe minus harum quam sapiente aliquid,
+              fugit voluptatum porro? Consequatur quidem asperiores non possimus
+              iste ea quas obcaecati.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- faq section end here  -->
+
+    <!-- Get Ready section start from here  -->
+    <div class="section container getReady_section">
+      <div class="getReady_content">
+        <h3>Get ready to collect<br />our NFT</h3>
+        <a href="#">Get started</a>
+      </div>
+    </div>
+    <!-- Get Ready section end here  -->
+
+    <!-- Footer section start from here  -->
+    <div class="footer section container">
+      <div class="row jc-between">
+        <div class="footer_logo">
+          <div class="logo">
+            <h1>Psycho<span>Art</span></h1>
+          </div>
+          <p>
+            The best NFT marketplace website in <br />the world and feel your
+            experience in <br />selling or buy our
+          </p>
+        </div>
+        <div class="footer_about">
+          <h3>About</h3>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Term & Condition</a></li>
+          <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer_company">
+          <h3>Company</h3>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Privacy & Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer_contact">
+          <h3>Contact</h3>
+          <li><a href="#">+012 3456789</a></li>
+          <li><a href="#">adorableprogrammer@gmail.com</a></li>
+          <div class="footer_contact_icons jc-between">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section end here  -->
+    <!-- swiper js  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
